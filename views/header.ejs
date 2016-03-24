@@ -28,6 +28,7 @@
 <header>
 	<h1>我要的小清新</h1>
 	<h2><%= title %></h2>
+	<span id="search"><form action="/search" method="GET"><input type="text" name="keyword" placeholder="SEARCH" class="search"></input></form></span>
 </header>
 
 <nav>
@@ -43,7 +44,7 @@
 		<span><a title="登陆" href="/login">login</a></span>
 		<span><a title="注册" href="/reg">register</a></span>
 	<% } %>
-	<span><form action="/search" method="GET"><input type="text" name="keyword" placeholder="SEARCH" class="search"></input></form></span>
+	
 </nav>
 
 <article>
