@@ -1,11 +1,42 @@
 <%- include header %>
 
-<form method="post">
+<!-- <form method="post">
 	用户名：<input type="text" name="name"></input><br/>
 	密码：	<input type="password" name="password"></input><br/>
 	确认密码：<input type="password" name="password-repeat"></input><br/>
 	邮箱：	<input type="email" name="email"></input><br/>
 			<input type="submit" value="注册"></input>
-</form>
+</form> -->
+
+<div id="wrapper">
+	<div id="register" class="animate form">
+		<form  method="post" autocomplete="on"> 
+			<h1> Sign up </h1> 
+			<p> 
+				<label for="usernamesignup" class="uname" data-icon="u">Your username</label>
+				<input id="usernamesignup" name="name" required="required" type="text" placeholder="mysuperusername690" />
+			</p>
+			<p> 
+				<label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
+				<input id="emailsignup" name="email" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+			</p>
+			<p> 
+				<label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
+				<input id="passwordsignup" name="password" required="required" type="password" placeholder="eg. X8df!90EO"/>
+			</p>
+			<p> 
+				<label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
+				<input id="passwordsignup_confirm" name="password-repeat" required="required" type="password" placeholder="eg. X8df!90EO"/>
+			</p>
+			<p class="signin button"> 
+				<input type="submit" value="Sign up"/> 
+			</p>
+			<p class="change_link">  
+				Already a member ?
+				<a href="/login" class="to_register"> Go and log in </a>
+			</p>
+		</form>
+	</div>
+</div>
 
 <%- include footer %>
